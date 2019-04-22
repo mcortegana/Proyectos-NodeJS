@@ -11,7 +11,8 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.json());
 
 // Routes
+app.use(employees);
 
 app.listen(app.get('port'), () => {
-   console.log(`Express server listen in port ${app.get('port')}`);
+    console.log(`Express server listen in port ${app.get('port')}`);
 });
